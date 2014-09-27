@@ -1,6 +1,6 @@
 {
   "name": "object-apply",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Map a transformation to every value in an object",
   "main": "index.js",
   "scripts": {
@@ -12,9 +12,7 @@
     "map"
   ],
   "license": "MIT",
-  "dependencies": {
-
-  },
+  "dependencies": {},
   "devDependencies": {
     "coveralls": "^2.10.0",
     "istanbul": "^0.2.11",
