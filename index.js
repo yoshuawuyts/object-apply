@@ -18,7 +18,9 @@ module.exports = function(obj, transform) {
   var nwObj = {};
 
   Object.keys(obj).forEach(function(key) {
-    nwObj[key] = transform(obj[key]);
+    var nw = obj[key];
+    assert(nw, 'object-apply: could not transform key \'' + key + '\' because it is falsy');
+    nwObj[key] = transform(nw);
   });
 
   return nwObj;
